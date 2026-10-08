@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background:#454747;
+    padding:30px;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid rgb(83, 83, 109);
+    margin-bottom:20px;
+}
+section{
+    margin-bottom: 30px;
+}
+
+.container{
+    width:1000px;
+    margin:auto;
+    display:flex;
+    background:rgb(231, 240, 243);
+    box-shadow:0 0 20px rgba(143, 99, 99, 0.2);
+}
+
+.left{
+    width:35%;
+    background-image: url(img2.jpg);
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.left img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.left h3{
+    color:#d9d9d9;
+    margin-bottom:20px;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    margin:25px 0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-bottom:1px solid gray;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#52cf63;
+}
+
+.left h2{
+    margin-top:25px;
+    color:#e9920f;
+    border-bottom:2px solid white;
+    padding-bottom:5px;
+}
+
+.left p{
+    margin-top:10px;
+    line-height:25px;
+    text-align:left;
+}
+
+.right{
+    width:65%;
+    padding:40px;
+    background-image: url(backgroundimg.jpg);
+    background-position: center;
+}
+
+
+.right h2{
+    display: inline-block;
+    color:#e9920f;
+    text-decoration: #0d0e0d;
+    padding-bottom:15px;
+}
+
+.right h5{
+    font-size:18px;
+    color:#333;
+    margin-top:15px;
+}
+
+.right p{
+    line-height:28px;
+    color:#555;
+}
+
+#Skills h6{
+    background:#ff9800;
+    color:white;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:20px;
+    margin:10px;
+    font-size:16px;
+}
+
+
+
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+    width:100%;
+}
+
+.left,.right{
+    width:100%;
+}
+
+.left img{
+    width:150px;
+    height:150px;
+}
+
